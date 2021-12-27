@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style_images.css" />
+    <link rel="stylesheet" href="style/style_position.css" />
+    <title>PrintMania - Gráfica Online</title>
+  </head>
+  <body>
+    <!-- <h1>PrintMania - Gráfica Online</h1> -->
+    <header id="cabecalho">
+      <div>
+        <img
+          src="image/Print.png"alt="Logo PrintMania"id="foto-logo-principal" />
+      </div>
+      <!-- <nav id="navbar">
+        <a href="">Home</a>
+        <a href="">Contatos</a>
+        <a href="">Sobre</a>
+      </nav> -->
+    </header>
+    <section>
+      <div id="produtos">
+        <form class="box-form">
+        <div class="title-product">
+            <input type="checkbox" name="montagem" id="montagem-cartaotag" onclick="add_price()"/>
+            <label for="montagem-cartaotag">Montagem de Cartão de Visita/Tag - R$9,90</label>
+        </div><br>
+        <div class="title-product">
+            <input type="checkbox" name="montagem" id="montagem-panfleto" onclick="add_price()"/>
+            <label for="montagem-panfleto">Montagem de Panfeltos - R$19,90</label>
+        </div><br>
+        <div class="title-product">
+            <input type="checkbox" name="montagem" id="montagem-logoMarca" onclick="add_price()"/>
+            <label for="montagem-panfleto">Criação de Logo/Marca <i><b style="color: brown;">a partir de</b></i> - R$29,90</label>
+        </div><br>
+        <div class="title-product">
+            <input type="checkbox" name="montagem" id="montagem-cardInt" onclick="add_price()"/>
+            <label for="montagem-panfleto">Cardápio Interativo - R$149,90</label>
+        </div><br>
+        <div class="title-product">
+            <input type="checkbox" name="montagem" id="montagem-PDF" onclick="add_price()"/>
+            <label for="montagem-panfleto">Cardápio em PDF - R$59,90</label>
+        </div><br>
+        <div class="title-product">
+            <input type="checkbox" name="montagem" id="montagem-cardVirt" onclick="add_price()"/>
+            <label for="montagem-panfleto">Cardápio Virtual - R$39,90</label>
+        </div><br>
+        <!-- <div class="title-product">   
+            <input type="checkbox" name="montagem" id="montagem-panfleto" onclick="add_price()"/>
+            <label for="montagem-panfleto">Montagem de Panfeltos - R$19,90</label>
+        </div>  -->
+        </form>
+       
+        <form class="box-form-price">
+          <div class="total-price">
+            <label for="title-product" class="total-result" 
+              >Total: </label
+            >
+          </div><br>
+          <div class="total-price">
+          <p id="resultado">R$ 0,00</p>
+        </div>
+        </form>
+      
+    </section>
+    
+    <footer>
+      PrintManiaOficial&copy; 2021 - Todos os direitos reservados - Desenvolvido por André Felipe Pinto
+    </footer>
+  </body>
+  <script src="js/app.js"></script>
+</html>
